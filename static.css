@@ -9,8 +9,14 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(purple ,blue);
-    color: var(--text-color);
+    background: linear-gradient(
+        135deg,                     /* Sets the angle of the gradient */
+        rgb(66, 10, 122),
+        rgb(97, 34, 160),
+        rgb(66, 10, 122)
+      );
+      
+    color: var(--text-color); 
     margin: 0;
     padding: 0;
 }
@@ -121,12 +127,12 @@ h1 {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.39);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.9px);
-    -webkit-backdrop-filter: blur(10.9px);
-    border: 1px solid rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
     }
 
 .card h2 {
@@ -137,13 +143,13 @@ h1 {
 .balance {
     font-size: 2em;
     font-weight: bold;
-    color: var(--primary-color);
+    color: whitesmoke;
 }
 
 .original {
     font-size: 2em;
     font-weight: bold;
-    color: var(--primary-color); 
+    color: whitesmoke;
 }
 
 .progress-bar {
@@ -153,10 +159,19 @@ h1 {
     margin-top: 10px;
 }
 
+.tvchart{
+    background-color: #333333;
+    padding: 20px;
+}
+
 .chart-container {
     flex-grow: 1;
-    background-color: var(--card-background);
-    border-radius: var(--border-radius);
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
     padding: 20px;
 }
 
