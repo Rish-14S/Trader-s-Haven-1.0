@@ -22,8 +22,12 @@ def get_news_sentiment(url):
         return 0
 
 @app.route("/")
-def home():
+def index():
     return render_template("index.html")
+
+@app.route("/backtest")
+def backtest():
+    return render_template("backtest.html")
 
 @app.route("/get_stock_data/<symbol>")
 def get_stock_data(symbol):
