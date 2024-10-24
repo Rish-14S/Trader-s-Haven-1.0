@@ -12,11 +12,10 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Main Chart</a></li>
-                    <li><a href="#">Back Testing</a></li>
-                    <li><a href="#">Strategies</a></li>
+                    <li><a href="{{ url_for('index') }}" target="_blank">Main Chart</a></li>
+                    <li><a href="{{ url_for('backtest') }}" target="_blank">Back Testing</a></li>
                 </ul>
-            </nav>
+            </nav>                       
             <div class="theme-toggle">
                 <input type="checkbox" id="theme-switch" class="theme-switch">
                 <label for="theme-switch" class="switch-label">
@@ -51,7 +50,6 @@
                         <button class="tab">Expenses</button>
                         <button class="tab">Taxes</button>
                     </div>
-                    <button class="download-btn"><i class="fas fa-download"></i></button>
                 </div>
                 <div class="sentiment-indicators">
                     <div class="sentiment-circle bullish"></div>
@@ -72,7 +70,9 @@
             </div>
         </main>
     </div>
+    <div class = "tvchart">
     <script src="https://s3.tradingview.com/tv.js"></script>
+    </div>
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
